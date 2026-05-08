@@ -1,5 +1,5 @@
-**Payment Processing System**
--------------------------------------------------------------------------------------------------------------------------------------------------------
+Payment Processing System
+
 A microservices-based Payment Processing System built using Spring Boot, Spring Cloud, Kafka, MySQL, and JWT Authentication.
 
 The system demonstrates:
@@ -14,7 +14,7 @@ Secure APIs with JWT
 Idempotent Payment Processing
 
 
-**🚀 Tech Stack**
+🚀 Tech Stack
 Java 21
 Spring Boot
 Spring Security
@@ -31,16 +31,8 @@ Maven
 **🏗️ Microservices Architecture**
 
 
-Client
-   ↓
-API Gateway
-   ↓
-------------------------------------------------
-|                  |                           |
-User Service    Order Service            Payment Service
-                     ↓                           ↓
-                 Kafka Consumer  ←──────── Kafka Producer
-------------------------------------------------
+<img width="501" height="259" alt="image" src="https://github.com/user-attachments/assets/73df016c-4962-44b8-809c-6eaa90bb8dec" />
+
 
 
 **📌 Services
