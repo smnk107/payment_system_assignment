@@ -1,0 +1,11 @@
+kafka.topic:
+
+  payment-event: payment-event
+
+
+#spring:
+#  kafka:
+#    bootstrap-servers: kafka:9092
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
