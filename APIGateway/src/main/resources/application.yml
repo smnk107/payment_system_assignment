@@ -9,8 +9,20 @@ spring:
           uri: lb://PAYMENT-SERVICE
           predicates:
             - Path=/payments/**
+          filters:
+            - name: AuthenticationFilter
 
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
             - Path=/users/**
+            - AddRequestHeader=Content-Type, application/json
+          filters:
+            - name: AuthenticationFilter
+
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/users/**
+          filters:
+            - name: AuthenticationFilter
